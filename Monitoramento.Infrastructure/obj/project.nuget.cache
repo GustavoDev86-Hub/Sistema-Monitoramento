@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UbKsEV3kJg8=",
+  "success": true,
+  "projectFilePath": "/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/Monitoramento.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/home/gusta/.nuget/packages/rabbitmq.client/7.2.1/rabbitmq.client.7.2.1.nupkg.sha512",
+    "/home/gusta/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
+    "/home/gusta/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

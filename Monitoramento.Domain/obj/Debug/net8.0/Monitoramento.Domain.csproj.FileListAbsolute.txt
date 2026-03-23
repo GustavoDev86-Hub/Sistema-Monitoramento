@@ -1,0 +1,11 @@
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/bin/Debug/net8.0/Monitoramento.Domain.deps.json
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/bin/Debug/net8.0/Monitoramento.Domain.dll
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/bin/Debug/net8.0/Monitoramento.Domain.pdb
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/obj/Debug/net8.0/Monitoramento.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/obj/Debug/net8.0/Monitoramento.Domain.AssemblyInfoInputs.cache
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/obj/Debug/net8.0/Monitoramento.Domain.AssemblyInfo.cs
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/obj/Debug/net8.0/Monitoramento.Domain.csproj.CoreCompileInputs.cache
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/obj/Debug/net8.0/Monitoramento.Domain.dll
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/obj/Debug/net8.0/refint/Monitoramento.Domain.dll
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/obj/Debug/net8.0/Monitoramento.Domain.pdb
+/home/gusta/SistemaMonitoramento/Monitoramento.Domain/obj/Debug/net8.0/ref/Monitoramento.Domain.dll

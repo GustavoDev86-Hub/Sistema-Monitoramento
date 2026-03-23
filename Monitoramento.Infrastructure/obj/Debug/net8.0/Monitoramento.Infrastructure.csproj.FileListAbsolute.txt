@@ -1,0 +1,5 @@
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.csproj.AssemblyReference.cache
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.AssemblyInfoInputs.cache
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.AssemblyInfo.cs
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.csproj.CoreCompileInputs.cache
