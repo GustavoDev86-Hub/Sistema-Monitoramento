@@ -1,5 +1,16 @@
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/bin/Debug/net8.0/Monitoramento.Infrastructure.deps.json
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/bin/Debug/net8.0/Monitoramento.Infrastructure.dll
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/bin/Debug/net8.0/Monitoramento.Infrastructure.pdb
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/bin/Debug/net8.0/Monitoramento.Domain.dll
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/bin/Debug/net8.0/Monitoramento.Domain.pdb
 /home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.csproj.AssemblyReference.cache
 /home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 /home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.AssemblyInfoInputs.cache
 /home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.AssemblyInfo.cs
 /home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.csproj.CoreCompileInputs.cache
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.sourcelink.json
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitora.245787A1.Up2Date
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.dll
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/refint/Monitoramento.Infrastructure.dll
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/Monitoramento.Infrastructure.pdb
+/home/gusta/SistemaMonitoramento/Monitoramento.Infrastructure/obj/Debug/net8.0/ref/Monitoramento.Infrastructure.dll

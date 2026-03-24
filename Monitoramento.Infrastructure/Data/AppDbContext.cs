@@ -11,17 +11,15 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // Mapeamento Manual (Fluent API)
         modelBuilder.Entity<Ativo>(entity =>
         {
-            entity.ToTable("tb_ativos"); // Nome da tabela no Postgres
-
-            entity.HasKey(a => a.Id); // Chave primária
+            entity.ToTable("tb_ativos");
+            entity.HasKey(a => a.Id);
 
             entity.Property(a => a.Url)
                 .IsRequired()
                 .HasMaxLength(255)
-                .HasColumnName("ds_url"); // Nome da coluna customizado
+                .HasColumnName("ds_url");
 
             entity.Property(a => a.EstaOnline)
                 .HasDefaultValue(false);
