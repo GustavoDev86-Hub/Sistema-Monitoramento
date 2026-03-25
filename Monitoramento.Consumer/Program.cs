@@ -5,7 +5,6 @@ using RabbitMQ.Client.Events;
 
 var factory = new ConnectionFactory { HostName = "localhost" };
 
-// Na versão 7, tudo é Async
 using var connection = await factory.CreateConnectionAsync();
 using var channel = await connection.CreateChannelAsync();
 
@@ -19,7 +18,6 @@ await channel.QueueDeclareAsync(queue: queueName,
 
 Console.WriteLine(" [*] Aguardando alertas... Pressione [enter] para sair.");
 
-// Criamos o consumidor
 var consumer = new AsyncEventingBasicConsumer(channel);
 
 consumer.ReceivedAsync += async (model, ea) =>
@@ -31,7 +29,7 @@ consumer.ReceivedAsync += async (model, ea) =>
     Console.WriteLine($" [!] ALERTA RECEBIDO: {message} em {DateTime.Now}");
     Console.ResetColor();
 
-    // Aqui é onde você colocaria o código para mandar WhatsApp no futuro!
+    // para o WhatsApp no futuro!
     await Task.Yield(); 
 };
 

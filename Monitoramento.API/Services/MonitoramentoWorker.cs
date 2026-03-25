@@ -13,7 +13,7 @@ public class MonitoramentoWorker : BackgroundService
     public MonitoramentoWorker(
         IServiceProvider serviceProvider, 
         ILogger<MonitoramentoWorker> logger, 
-        RabbitMqService rabbitMqService) // Construtor atualizado
+        RabbitMqService rabbitMqService) 
     {
         _serviceProvider = serviceProvider;
         _logger = logger;
@@ -34,8 +34,7 @@ public class MonitoramentoWorker : BackgroundService
                 if (ativos.Any())
                 {
                     _logger.LogInformation("Verificando {Count} ativos...", ativos.Count);
-                    
-                    // Executa as verificações em paralelo
+
                     var tarefas = ativos.Select(a => VerificarStatus(a));
                     await Task.WhenAll(tarefas);
                     
