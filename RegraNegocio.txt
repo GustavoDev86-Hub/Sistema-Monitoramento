@@ -1,0 +1,38 @@
+Projeto: Dashboard de Monitoramento (SaaS)
+O que é: Um painel para o cliente ver se os sites dele estão online ou caíram.
+
+1. O que o Front-end deve ter (Telas):
+Cards de Status: Cada site cadastrado deve ser um card.
+
+Verde: Site tá voando (Online).
+
+Vermelho: Deu ruim (Offline).
+
+Filtros Rápidos: Botão para ver "Só os que caíram" e "Todos".
+
+Gráfico de Uptime: Um gráfico simples (pizza ou barra) mostrando a saúde geral (ex: 98% Online / 2% Offline).
+
+Logs de Erro: Uma listinha embaixo com o histórico (ex: google.com caiu às 10:00 - Erro 500).
+
+2. Stack Sugerida (Para agilizar):
+Framework: React ou Vue.js.
+
+Estilização: Tailwind CSS + Shadcn/UI (os componentes vêm prontos).
+
+Gráficos: Recharts ou Chart.js.
+
+Consumo de API: Axios.
+
+3. Integração com o meu Back-end:
+Swagger: Pega a documentação automática em: http://localhost:5075/swagger (Lá tem todos os nomes de campos e rotas).
+
+Roteiro de Chamadas:
+
+GET /api/monitoramento/status -> Traz a lista de sites e se estão online.
+
+POST /api/monitoramento/adicionar -> Para cadastrar um novo site.
+
+Dica: Faz um setInterval no teu código pra atualizar os dados a cada 30 segundos sozinho.
+
+4. Regra de Ouro (UX):
+Se o EstaOnline vier false, o card tem que piscar ou ficar bem destacado. O cliente precisa ver o erro de longe!
