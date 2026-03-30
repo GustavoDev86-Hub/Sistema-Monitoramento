@@ -1,11 +1,3 @@
-/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.csproj.AssemblyReference.cache
-/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.GeneratedMSBuildEditorConfig.editorconfig
-/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.AssemblyInfoInputs.cache
-/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.AssemblyInfo.cs
-/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.csproj.CoreCompileInputs.cache
-/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.MvcApplicationPartsAssemblyInfo.cs
-/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.MvcApplicationPartsAssemblyInfo.cache
-/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.sourcelink.json
 /home/gusta/SistemaMonitoramento/Monitoramento.API/bin/Debug/net8.0/appsettings.Development.json
 /home/gusta/SistemaMonitoramento/Monitoramento.API/bin/Debug/net8.0/appsettings.json
 /home/gusta/SistemaMonitoramento/Monitoramento.API/bin/Debug/net8.0/Monitoramento.API
@@ -101,6 +93,14 @@
 /home/gusta/SistemaMonitoramento/Monitoramento.API/bin/Debug/net8.0/Monitoramento.Infrastructure.dll
 /home/gusta/SistemaMonitoramento/Monitoramento.API/bin/Debug/net8.0/Monitoramento.Domain.pdb
 /home/gusta/SistemaMonitoramento/Monitoramento.API/bin/Debug/net8.0/Monitoramento.Infrastructure.pdb
+/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.csproj.AssemblyReference.cache
+/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.GeneratedMSBuildEditorConfig.editorconfig
+/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.AssemblyInfoInputs.cache
+/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.AssemblyInfo.cs
+/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.csproj.CoreCompileInputs.cache
+/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.MvcApplicationPartsAssemblyInfo.cs
+/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.MvcApplicationPartsAssemblyInfo.cache
+/home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/Monitoramento.API.sourcelink.json
 /home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/staticwebassets.build.json
 /home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/staticwebassets.development.json
 /home/gusta/SistemaMonitoramento/Monitoramento.API/obj/Debug/net8.0/staticwebassets/msbuild.Monitoramento.API.Microsoft.AspNetCore.StaticWebAssets.props

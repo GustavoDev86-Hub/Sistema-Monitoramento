@@ -1,3 +1,4 @@
+using System.Net.Http;
 using Microsoft.EntityFrameworkCore;
 using Monitoramento.Infrastructure.Data;
 using Monitoramento.Infrastructure.Messaging;
@@ -25,30 +26,41 @@ public class MonitoramentoWorker : BackgroundService
         _logger.LogInformation("Serviço de Monitoramento Iniciado...");
 
         while (!stoppingToken.IsCancellationRequested)
+    {
+        using (var scope = _serviceProvider.CreateScope())
         {
-            using (var scope = _serviceProvider.CreateScope())
+            var _context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            var sites = await _context.Ativos.ToListAsync();
+
+            foreach (var site in sites)
             {
-                var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-                var ativos = await context.Ativos.ToListAsync();
-
-                if (ativos.Any())
+                try 
                 {
-                    _logger.LogInformation("Verificando {Count} ativos...", ativos.Count);
+                    using var client = new HttpClient();
+                    // TESTA A URL DO SITE ESPECÍFICO
+                    var response = await client.GetAsync(site.Url); 
 
-                    var tarefas = ativos.Select(a => VerificarStatus(a));
-                    await Task.WhenAll(tarefas);
+                    site.EstaOnline = response.IsSuccessStatusCode;
+                    site.UltimaVerificacao = DateTime.Now;
+
+                    _context.Ativos.Update(site);
                     
-                    await context.SaveChangesAsync();
+                    Console.WriteLine($"[VERIFICADOR] Site: {site.Url} | Status: {site.EstaOnline} | Hora: {site.UltimaVerificacao}");
                 }
-                else
+                catch (Exception ex)
                 {
-                    _logger.LogWarning("Nenhum ativo cadastrado para monitorar.");
+                    site.EstaOnline = false;
+                    site.UltimaVerificacao = DateTime.Now;
+                    Console.WriteLine($"[ERRO] Falha ao testar {site.Url}: {ex.Message}");
                 }
             }
+            // SALVA TUDO NO BANCO DEPOIS DO LOOP
+            await _context.SaveChangesAsync();
+                    }
 
-            await Task.Delay(TimeSpan.FromSeconds(15), stoppingToken);
-        }
-    }
+                    await Task.Delay(TimeSpan.FromSeconds(10), stoppingToken);
+                }
+                }
 
     private async Task VerificarStatus(Monitoramento.Domain.Entities.Ativo ativo)
     {
@@ -72,6 +84,6 @@ public class MonitoramentoWorker : BackgroundService
             await _rabbitMqService.EnviarAlerta($"O site {ativo.Url} caiu totalmente!");
         }
         
-        ativo.UltimaVerificacao = DateTime.UtcNow;
+        ativo.UltimaVerificacao = DateTime.Now;
     }
 }

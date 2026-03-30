@@ -24,10 +24,11 @@ export default function Dashboard() {
     }
   };
 
-  // Isso aqui roda assim que a página abre
   useEffect(() => {
     carregarDados();
-    const interval = setInterval(carregarDados, 15000); // Atualiza a cada 15s
+    const interval = setInterval(() => {
+      carregarDados();
+    }, 5000); 
     return () => clearInterval(interval);
   }, []);
 
@@ -53,8 +54,12 @@ export default function Dashboard() {
                 <p className="text-2xl font-bold">
                   {site.estaOnline ? 'SISTEMA UP' : 'SISTEMA DOWN'}
                 </p>
-                <p className="text-gray-500 text-xs mt-4 italic">
-                  Viana SaaS - Verificado às {new Date(site.ultimaVerificacao).toLocaleTimeString()}
+                <p className="text-gray-400 text-[10px] mt-4 font-mono">
+                  🕒 Última checagem: {new Date(site.ultimaVerificacao).toLocaleTimeString('pt-BR', { 
+                    hour: '2-digit', 
+                    minute: '2-digit', 
+                    second: '2-digit' 
+                  })}
                 </p>
               </div>
             ))
